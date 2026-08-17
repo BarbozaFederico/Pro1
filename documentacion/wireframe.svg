@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <rect width="1200" height="720" fill="#f4f7f8"/>
+  <rect x="0" y="0" width="1200" height="88" fill="#145c68"/>
+  <text x="48" y="56" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">Centro de Kinesiologia</text>
+  <text x="940" y="54" font-family="Arial, sans-serif" font-size="18" fill="#ffffff">Mi cuenta</text>
+  <rect x="40" y="126" width="260" height="548" rx="18" fill="#ffffff" stroke="#c8d4d8"/>
+  <text x="72" y="176" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17363c">Menu</text>
+  <text x="72" y="232" font-family="Arial, sans-serif" font-size="18" fill="#315c64">Inicio</text>
+  <text x="72" y="280" font-family="Arial, sans-serif" font-size="18" fill="#315c64">Mi ficha</text>
+  <text x="72" y="328" font-family="Arial, sans-serif" font-size="18" fill="#315c64">Plan de tratamiento</text>
+  <text x="72" y="376" font-family="Arial, sans-serif" font-size="18" fill="#315c64">Notificaciones</text>
+  <text x="344" y="164" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17363c">Resumen del paciente</text>
+  <rect x="344" y="198" width="376" height="184" rx="18" fill="#ffffff" stroke="#c8d4d8"/>
+  <text x="374" y="242" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#17363c">Proximo turno</text>
+  <text x="374" y="290" font-family="Arial, sans-serif" font-size="24" fill="#145c68">Martes 10:30</text>
+  <text x="374" y="332" font-family="Arial, sans-serif" font-size="17" fill="#59737a">Profesional asignado</text>
+  <rect x="748" y="198" width="412" height="184" rx="18" fill="#ffffff" stroke="#c8d4d8"/>
+  <text x="778" y="242" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#17363c">Plan activo</text>
+  <text x="778" y="290" font-family="Arial, sans-serif" font-size="24" fill="#145c68">Rehabilitacion de rodilla</text>
+  <rect x="778" y="318" width="180" height="34" rx="17" fill="#d9f0e5"/>
+  <text x="816" y="341" font-family="Arial, sans-serif" font-size="15" fill="#216343">En progreso</text>
+  <rect x="344" y="414" width="816" height="260" rx="18" fill="#ffffff" stroke="#c8d4d8"/>
+  <text x="374" y="462" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17363c">Ejercicios de hoy</text>
+  <line x1="374" y1="490" x2="1128" y2="490" stroke="#d8e1e4"/>
+  <text x="390" y="536" font-family="Arial, sans-serif" font-size="18" fill="#315c64">Movilidad articular</text>
+  <text x="930" y="536" font-family="Arial, sans-serif" font-size="18" fill="#315c64">3 series</text>
+  <line x1="374" y1="562" x2="1128" y2="562" stroke="#d8e1e4"/>
+  <text x="390" y="608" font-family="Arial, sans-serif" font-size="18" fill="#315c64">Fortalecimiento</text>
+  <text x="930" y="608" font-family="Arial, sans-serif" font-size="18" fill="#315c64">12 repeticiones</text>
+</svg>

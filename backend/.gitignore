@@ -1,1 +1,22 @@
+# Variables de entorno
 .env
+
+# Entornos virtuales
+venv/
+.venv/
+
+# Archivos generados por Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Archivos temporales de SQLite
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Editores y sistema operativo
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
