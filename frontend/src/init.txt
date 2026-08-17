@@ -1,0 +1,1 @@
+Estructura inicial del frontend para la aplicacion web del Centro de Kinesiologia.
