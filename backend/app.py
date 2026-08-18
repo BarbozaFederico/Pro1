@@ -4,11 +4,35 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 from flask import Flask, jsonify
+from flask_restful import Api
+
+from main.resources import (
+    FichaResource,
+    FichasResource,
+    LoginResource,
+    NotificacionesResource,
+    PlanesResource,
+    PlanResource,
+    RegisterResource,
+    UsuarioResource,
+    UsuariosResource,
+)
 
 BASE_DIR = Path(__file__).resolve().parent
 load_dotenv(BASE_DIR / ".env")
 
 app = Flask(__name__)
+api = Api(app)
+
+api.add_resource(PlanResource, "/plan/<int:id>")
+api.add_resource(PlanesResource, "/planes")
+api.add_resource(UsuarioResource, "/usuario/<int:id>")
+api.add_resource(UsuariosResource, "/usuarios")
+api.add_resource(NotificacionesResource, "/notificaciones")
+api.add_resource(FichaResource, "/ficha/<int:id>")
+api.add_resource(FichasResource, "/fichas")
+api.add_resource(LoginResource, "/login")
+api.add_resource(RegisterResource, "/register")
 
 
 def database_path():

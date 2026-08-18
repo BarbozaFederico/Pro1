@@ -1,0 +1,9 @@
+from .usuario import usuario as UsuarioResource
+from .usuario import usuarios as UsuariosResource
+from .plan import plan as PlanResource
+from .plan import planes as PlanesResource
+from .notificacion import notificaciones as NotificacionesResource
+from .ficha import ficha as FichaResource
+from .ficha import fichas as FichasResource
+from .auth import login as LoginResource
+from .auth import Register as RegisterResource

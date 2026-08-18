@@ -1,0 +1,432 @@
+{
+  "info": {
+    "_postman_id": "4822541e-a674-40c7-86b2-09c9173e7c09",
+    "name": "GRUPO-T",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53759273",
+    "_collection_link": "https://go.postman.co/collection/53759273-4822541e-a674-40c7-86b2-09c9173e7c09?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "planes",
+      "item": [
+        {
+          "name": "GET/planes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/planes",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "planes"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "200 ok",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/planes",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "planes"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Werkzeug/3.1.8 Python/3.13.14"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 18 Aug 2026 18:15:30 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "147"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"1\": {\n        \"nombre\": \"Plan Basico\",\n        \"precio\": 10000\n    },\n    \"2\": {\n        \"nombre\": \"Plan Plus\",\n        \"precio\": 18000\n    },\n    \"3\": {\n        \"nombre\": \"Plan Premium\",\n        \"precio\": 25000\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "POST/planes",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"Plan ExtraPremium\", \"precio\": 100000\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/planes",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "planes"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "201 created",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"nombre\": \"Plan ExtraPremium\", \"precio\": 100000\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/planes",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "planes"
+                  ]
+                }
+              },
+              "status": "CREATED",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Werkzeug/3.1.8 Python/3.13.14"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 18 Aug 2026 18:17:59 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "50"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"nombre\": \"Plan ExtraPremium\",\n    \"precio\": 100000\n}"
+            }
+          ]
+        },
+        {
+          "name": "GET/plan",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\": \"Plan ExtraPremium\", \"precio\": 100000\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/plan/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "plan",
+                "1"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "200 ok",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"nombre\": \"Plan ExtraPremium\", \"precio\": 100000\r\n}"
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/plan/1",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "plan",
+                    "1"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Werkzeug/3.1.8 Python/3.13.14"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 18 Aug 2026 18:20:19 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "43"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"nombre\": \"Plan Basico\",\n    \"precio\": 10000\n}"
+            }
+          ]
+        },
+        {
+          "name": "PUT/plan",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Ana\", \"email\": \"ana@mail.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/plan/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "plan",
+                "1"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "200 ok",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"nombre\": \"Ana\", \"email\": \"ana@mail.com\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/plan/1",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "plan",
+                    "1"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Werkzeug/3.1.8 Python/3.13.14"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 18 Aug 2026 18:25:05 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "30"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                }
+              ],
+              "cookie": [],
+              "body": "\"Plan actualizado cone exito\""
+            }
+          ]
+        },
+        {
+          "name": "DELETE/plan",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "\r\n"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/plan/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "plan",
+                "1"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "200 ok",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "\r\n"
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/plan/1",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "plan",
+                    "1"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Werkzeug/3.1.8 Python/3.13.14"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 18 Aug 2026 18:28:19 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "27"
+                },
+                {
+                  "key": "Connection",
+                  "value": "close"
+                }
+              ],
+              "cookie": [],
+              "body": "\"Plan eliminado con exito\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
