@@ -7,3 +7,4 @@ from .ficha import ficha as FichaResource
 from .ficha import fichas as FichasResource
 from .auth import login as LoginResource
 from .auth import Register as RegisterResource
+from .ejercicios import ejercicios as EjerciciosResource

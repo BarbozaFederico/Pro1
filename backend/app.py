@@ -16,6 +16,7 @@ from main.resources import (
     RegisterResource,
     UsuarioResource,
     UsuariosResource,
+    EjerciciosResource,
 )
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -33,6 +34,7 @@ api.add_resource(FichaResource, "/ficha/<int:id>")
 api.add_resource(FichasResource, "/fichas")
 api.add_resource(LoginResource, "/login")
 api.add_resource(RegisterResource, "/register")
+api.add_resource(EjerciciosResource, "/ejercicios")
 
 
 def database_path():
